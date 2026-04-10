@@ -6,4 +6,3 @@
 
 - [プライバシーポリシー](./legal/privacy-policy.md)
 - [利用規約](./legal/terms.md)
-- [特定商取引法に基づく表記](./legal/tokushoho.md)
