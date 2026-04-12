@@ -3,6 +3,24 @@
    Styles for the usage guide / documentation
    ======================================== */
 
+:root {
+  /* Docs Specific Light Variables */
+  --docs-section-num-bg: linear-gradient(135deg, rgba(0,209,255,0.12), rgba(0,209,255,0.04));
+  --docs-tip-bg: linear-gradient(135deg, rgba(0,209,255,0.08), rgba(0,209,255,0.02));
+  --docs-tip-border: rgba(0,209,255,0.15);
+  --docs-caution-bg: linear-gradient(135deg, rgba(255,214,0,0.10), rgba(255,214,0,0.03));
+  --docs-caution-border: rgba(255,214,0,0.2);
+}
+
+:root[data-theme="dark"] {
+  /* Docs Specific Dark Variables */
+  --docs-section-num-bg: linear-gradient(135deg, rgba(0,209,255,0.18), rgba(0,209,255,0.06));
+  --docs-tip-bg: linear-gradient(135deg, rgba(0,209,255,0.12), rgba(0,209,255,0.04));
+  --docs-tip-border: rgba(0,209,255,0.2);
+  --docs-caution-bg: linear-gradient(135deg, rgba(255,214,0,0.12), rgba(255,214,0,0.04));
+  --docs-caution-border: rgba(255,214,0,0.25);
+}
+
 .docs {
   padding: 100px 24px 80px;
   min-height: calc(100vh - 200px);
@@ -100,17 +118,11 @@
   font-weight: 800;
   font-size: 0.85rem;
   color: var(--primary);
-  background: linear-gradient(135deg, rgba(0,209,255,0.12), rgba(0,209,255,0.04));
+  background: var(--docs-section-num-bg);
   border-radius: 8px;
   padding: 4px 10px;
   letter-spacing: 0.04em;
   flex-shrink: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .docs__section-number {
-    background: linear-gradient(135deg, rgba(0,209,255,0.18), rgba(0,209,255,0.06));
-  }
 }
 
 .docs__section-header h2 {
@@ -180,13 +192,13 @@
 }
 
 .docs__tip {
-  background: linear-gradient(135deg, rgba(0,209,255,0.08), rgba(0,209,255,0.02));
-  border: 1px solid rgba(0,209,255,0.15);
+  background: var(--docs-tip-bg);
+  border: 1px solid var(--docs-tip-border);
 }
 
 .docs__caution {
-  background: linear-gradient(135deg, rgba(255,214,0,0.10), rgba(255,214,0,0.03));
-  border: 1px solid rgba(255,214,0,0.2);
+  background: var(--docs-caution-bg);
+  border: 1px solid var(--docs-caution-border);
 }
 
 .docs__tip-icon,
@@ -199,17 +211,6 @@
 .docs__tip p,
 .docs__caution p {
   margin-bottom: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .docs__tip {
-    background: linear-gradient(135deg, rgba(0,209,255,0.12), rgba(0,209,255,0.04));
-    border-color: rgba(0,209,255,0.2);
-  }
-  .docs__caution {
-    background: linear-gradient(135deg, rgba(255,214,0,0.12), rgba(255,214,0,0.04));
-    border-color: rgba(255,214,0,0.25);
-  }
 }
 
 /* ---------- FAQ ---------- */

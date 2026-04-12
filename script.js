@@ -66,4 +66,31 @@
       { passive: true }
     );
   }
+
+  // ---- Theme Toggle ----
+  var themeToggleBtn = document.getElementById('theme-toggle');
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', function() {
+      var currentTheme = document.documentElement.getAttribute('data-theme');
+      var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      try {
+        localStorage.setItem('teiten-theme', newTheme);
+      } catch (e) {}
+    });
+  }
+
+  // Listen for system theme changes if no override is set
+  if (window.matchMedia) {
+    var mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', function(e) {
+        try {
+          if (!localStorage.getItem('teiten-theme')) {
+            document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+          }
+        } catch (err) {}
+      });
+    }
+  }
 })();
