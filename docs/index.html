@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使い方ガイド - Teiten（定点）</title>
+  <meta name="description" content="定点観測アプリ Teiten の使い方ガイド。写真の記録、タグ管理、スライドショー、アナリティクスまで、すべての機能をわかりやすく解説します。">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./docs.css">
+</head>
+
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../" class="header__logo" aria-label="Teiten ホーム">
+        <img src="../assets/icon/icon-192x192.png" alt="Teiten" class="header__icon" width="32" height="32">
+        <span class="header__title">Teiten</span>
+      </a>
+      <nav class="header__nav" aria-label="サイトナビゲーション">
+        <a href="../docs/" class="header__link header__link--active">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="docs">
+    <div class="docs__inner">
+
+      <h1 class="docs__title">使い方ガイド</h1>
+      <p class="docs__lead">Teiten のすべての機能を紹介します。</p>
+
+      <!-- ===== Table of Contents ===== -->
+      <nav class="docs__toc" aria-label="目次">
+        <h2 class="docs__toc-title">目次</h2>
+        <ol class="docs__toc-list">
+          <li><a href="#getting-started">はじめに</a></li>
+          <li><a href="#record">写真を記録する</a></li>
+          <li><a href="#calendar">カレンダーで見る</a></li>
+          <li><a href="#tags">タグで分類する</a></li>
+          <li><a href="#slideshow">スライドショー</a></li>
+          <li><a href="#vertical-calendar">バーチカルビュー</a></li>
+          <li><a href="#analytics">アナリティクス</a></li>
+          <li><a href="#one-word">一言機能</a></li>
+          <li><a href="#settings">設定</a></li>
+          <li><a href="#export">エクスポートとバックアップ</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ol>
+      </nav>
+
+      <!-- 01: Getting Started -->
+      <section class="docs__section" id="getting-started">
+        <div class="docs__section-header">
+          <span class="docs__section-number">01</span>
+          <h2>はじめに</h2>
+        </div>
+        <div class="docs__content">
+          <p>Teiten は <strong>1日1枚</strong>の写真やテキストを記録して、日々の変化を振り返る「定点観測」アプリです。</p>
+          <ul class="docs__list">
+            <li>完全無料・広告なし</li>
+            <li>アカウント登録不要</li>
+            <li>データはすべてあなたの端末内に保存（ローカルファースト）</li>
+            <li>オフラインで動作</li>
+          </ul>
+          <div class="docs__tip">
+            <span class="docs__tip-icon" aria-hidden="true">💡</span>
+            <p>Google Play からインストールしたら、すぐに使い始められます。メールアドレスやパスワードの入力は不要です。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02: Record -->
+      <section class="docs__section" id="record">
+        <div class="docs__section-header">
+          <span class="docs__section-number">02</span>
+          <h2>写真を記録する</h2>
+        </div>
+        <div class="docs__content">
+          <h3>カメラで撮影する</h3>
+          <ol class="docs__list docs__list--ordered">
+            <li>画面右下の<strong>カメラボタン（青い丸ボタン）</strong>をタップ</li>
+            <li>カメラが起動するので撮影</li>
+            <li>タグを選択して保存</li>
+          </ol>
+
+          <h3>ギャラリーから選ぶ</h3>
+          <ol class="docs__list docs__list--ordered">
+            <li>カメラボタンの隣にある<strong>画像追加ボタン</strong>をタップ</li>
+            <li>端末のギャラリーから写真を選択</li>
+            <li>タグを選択して保存</li>
+          </ol>
+
+          <h3>過去の日付に記録する</h3>
+          <ol class="docs__list docs__list--ordered">
+            <li>カレンダーで記録したい日付をタップして選択</li>
+            <li>カメラまたはギャラリーから追加</li>
+          </ol>
+
+          <div class="docs__tip">
+            <span class="docs__tip-icon" aria-hidden="true">📷</span>
+            <p>同じ場所・同じ角度で撮り続けると、変化がよりわかりやすくなります。植物の成長、自撮り、作品の制作過程など、好きなテーマで始めてみましょう。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03: Calendar -->
+      <section class="docs__section" id="calendar">
+        <div class="docs__section-header">
+          <span class="docs__section-number">03</span>
+          <h2>カレンダーで見る</h2>
+        </div>
+        <div class="docs__content">
+          <p>ホーム画面のカレンダーには、記録した日にサムネイルが表示されます。</p>
+          <ul class="docs__list">
+            <li>左右スワイプで <strong>月を切り替え</strong></li>
+            <li>月表示をタップすると<strong>月選択ピッカー</strong>が開き、素早くジャンプ</li>
+            <li>サムネイルをタップで <strong>詳細表示（フォトプレビュー）</strong></li>
+            <li>詳細表示では写真の削除やタグの変更が可能</li>
+          </ul>
+          <div class="docs__tip">
+            <span class="docs__tip-icon" aria-hidden="true">📅</span>
+            <p>カレンダー上部にはヒーローセクションがあり、選択した日付の写真が大きく表示されます。一目で記録の継続状況を確認できます。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04: Tags -->
+      <section class="docs__section" id="tags">
+        <div class="docs__section-header">
+          <span class="docs__section-number">04</span>
+          <h2>タグで分類する</h2>
+        </div>
+        <div class="docs__content">
+          <p>写真にタグを付けて、複数の定点観測テーマを管理できます。<strong>タグ1つにつき1日1枚</strong>の写真を記録できます。</p>
+
+          <h3>タグを作成する</h3>
+          <ol class="docs__list docs__list--ordered">
+            <li>画面右下の<strong>タグアイコンボタン</strong>をタップ</li>
+            <li>タグ名と絵文字、カラーを設定</li>
+            <li>「保存」で完了</li>
+          </ol>
+
+          <h3>タグで絞り込む</h3>
+          <ul class="docs__list">
+            <li>カレンダー上部のタグチップをタップして絞り込み</li>
+            <li>複数タグの同時選択も可能（比較モード）</li>
+            <li>「すべて」を選択すると全写真を表示</li>
+          </ul>
+
+          <h3>タグを編集する</h3>
+          <ul class="docs__list">
+            <li>タグチップを<strong>長押し</strong>すると編集画面へ移動</li>
+            <li>名前・絵文字・カラーの変更、タグの削除が可能</li>
+            <li>設定 → タグ設定から一覧管理も可能</li>
+          </ul>
+
+          <div class="docs__tip">
+            <span class="docs__tip-icon" aria-hidden="true">🏷️</span>
+            <p>例えば「🌱 植物」「📸 自撮り」「💻 デスク」「🍱 お弁当」など、定点観測したいテーマごとにタグを作ると便利です。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05: Slideshow -->
+      <section class="docs__section" id="slideshow">
+        <div class="docs__section-header">
+          <span class="docs__section-number">05</span>
+          <h2>スライドショー</h2>
+        </div>
+        <div class="docs__content">
+          <p>記録した写真をスライドショー形式で連続再生できます。</p>
+          <ul class="docs__list">
+            <li>ホーム画面左上の<strong>再生ボタン</strong>をタップして開始</li>
+            <li>タグで絞り込んだ状態で再生すると、そのタグだけのスライドショーに</li>
+            <li>画面の<strong>左側タップで前へ</strong>、<strong>右側タップで次へ</strong></li>
+            <li>画面の<strong>中央タップで一時停止/再開</strong></li>
+          </ul>
+
+          <h3>スライドショーの設定</h3>
+          <ul class="docs__list">
+            <li><strong>再生順序</strong>: 古い順・新しい順・ランダムから選択</li>
+            <li><strong>表示間隔</strong>: スライド切り替えの秒数を調整</li>
+            <li>設定 → スライドショー設定から変更可能</li>
+          </ul>
+
+          <div class="docs__tip">
+            <span class="docs__tip-icon" aria-hidden="true">▶️</span>
+            <p>プログレスバーで再生位置を確認できます。日々の変化がアニメーションのように楽しめます。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06: Vertical Calendar -->
+      <section class="docs__section" id="vertical-calendar">
+        <div class="docs__section-header">
+          <span class="docs__section-number">06</span>
+          <h2>バーチカルビュー</h2>
+        </div>
+        <div class="docs__content">
+          <p>写真を縦に一覧表示して、スクロールで連続的に振り返れるビューです。</p>
+          <ul class="docs__list">
+            <li>ホーム画面左上の<strong>リストアイコン</strong>をタップして開く</li>
+            <li>日付ごとに写真が縦に並び、一覧性が高い</li>
+            <li>素早くスクロールして全体の記録を把握</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 07: Analytics -->
+      <section class="docs__section" id="analytics">
+        <div class="docs__section-header">
+          <span class="docs__section-number">07</span>
+          <h2>アナリティクス</h2>
+        </div>
+        <div class="docs__content">
+          <p>記録の継続状況を数字とビジュアルで確認できます。</p>
+          <ul class="docs__list">
+            <li>ホーム画面左上の<strong>グラフアイコン</strong>をタップして開く</li>
+            <li><strong>ヒートマップ</strong>: GitHub風の記録グラフで年間の活動を可視化</li>
+            <li><strong>連続日数</strong>: 現在の連続記録日数と最高記録</li>
+            <li><strong>月別チャート</strong>: 月ごとの記録数をバーチャートで表示</li>
+            <li><strong>タグ別分析</strong>: タグで絞り込んだ統計も確認可能</li>
+          </ul>
+          <div class="docs__tip">
+            <span class="docs__tip-icon" aria-hidden="true">📊</span>
+            <p>年セレクターで年を切り替えて、過去の記録状況を振り返ることもできます。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08: One Word (Text Card) -->
+      <section class="docs__section" id="one-word">
+        <div class="docs__section-header">
+          <span class="docs__section-number">08</span>
+          <h2>一言機能</h2>
+        </div>
+        <div class="docs__content">
+          <p>写真の代わりに、テキストカードとしてその日の一言を記録できます。</p>
+          <ol class="docs__list docs__list--ordered">
+            <li>画面右下の<strong>ペンアイコン</strong>をタップ</li>
+            <li>テキストを入力</li>
+            <li>カラフルなテキストカードとして写真と一緒にカレンダーに保存</li>
+          </ol>
+          <ul class="docs__list">
+            <li>一言は1日1件まで記録可能</li>
+            <li>設定画面から機能のON/OFFを切り替え可能</li>
+          </ul>
+          <div class="docs__tip">
+            <span class="docs__tip-icon" aria-hidden="true">✍️</span>
+            <p>写真を撮れなかった日でも、一言だけ残しておくことで記録を途切れさせずに継続できます。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09: Settings -->
+      <section class="docs__section" id="settings">
+        <div class="docs__section-header">
+          <span class="docs__section-number">09</span>
+          <h2>設定</h2>
+        </div>
+        <div class="docs__content">
+          <p>ホーム画面右上の<strong>歯車アイコン</strong>をタップして設定画面を開きます。</p>
+
+          <h3>外観（テーマ）</h3>
+          <ul class="docs__list">
+            <li><strong>ライト</strong> / <strong>ダーク</strong> / <strong>システム連動</strong> の3モードから選択</li>
+          </ul>
+
+          <h3>一言機能</h3>
+          <ul class="docs__list">
+            <li>テキストカード機能のON/OFFをトグルで切り替え</li>
+          </ul>
+
+          <h3>タグ設定</h3>
+          <ul class="docs__list">
+            <li>タグの一覧管理・並び替え・非表示設定</li>
+          </ul>
+
+          <h3>リマインダー設定</h3>
+          <ul class="docs__list">
+            <li>通知で記録を忘れないようにリマインド</li>
+            <li>複数の通知時刻を設定可能</li>
+          </ul>
+
+          <h3>スライドショー設定</h3>
+          <ul class="docs__list">
+            <li>再生順序（古い順・新しい順・ランダム）と表示間隔を調整</li>
+          </ul>
+
+          <h3>データとストレージ</h3>
+          <ul class="docs__list">
+            <li>使用ストレージの確認</li>
+            <li>写真のエクスポート（カメラロールへ保存）</li>
+            <li>写真の一括管理</li>
+          </ul>
+
+          <h3>このアプリについて</h3>
+          <ul class="docs__list">
+            <li>利用規約・プライバシーポリシーの確認</li>
+            <li>オープンソースライセンスの表示</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 10: Export & Backup -->
+      <section class="docs__section" id="export">
+        <div class="docs__section-header">
+          <span class="docs__section-number">10</span>
+          <h2>エクスポートとバックアップ</h2>
+        </div>
+        <div class="docs__content">
+          <p>データはすべて端末内に保存されるため、<strong>バックアップはユーザーの責任</strong>です。</p>
+          <ul class="docs__list">
+            <li>設定 → データとストレージ → 「データエクスポート」から写真をカメラロールに保存</li>
+            <li>端末のバックアップ機能と併用することを推奨</li>
+          </ul>
+          <div class="docs__caution">
+            <span class="docs__caution-icon" aria-hidden="true">⚠️</span>
+            <p>アプリを削除（アンインストール）すると、<strong>すべてのデータが失われます</strong>。定期的なバックアップをお忘れなく。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11: FAQ -->
+      <section class="docs__section" id="faq">
+        <div class="docs__section-header">
+          <span class="docs__section-number">11</span>
+          <h2>よくある質問</h2>
+        </div>
+        <div class="docs__content">
+          <div class="docs__faq-item">
+            <h3>Q. 1日に複数枚の写真を記録できますか？</h3>
+            <p>タグ1つにつき1日1枚の記録です。複数のタグを作成すれば、1日に複数枚の写真を記録できます。例えば「植物」タグで1枚、「自撮り」タグで1枚という使い方が可能です。</p>
+          </div>
+          <div class="docs__faq-item">
+            <h3>Q. iPhoneでも使えますか？</h3>
+            <p>現在は Android のみ対応しています。iOS版の予定は未定です。</p>
+          </div>
+          <div class="docs__faq-item">
+            <h3>Q. データはクラウドに保存されますか？</h3>
+            <p>いいえ。すべてのデータはお使いの端末内にのみ保存されます。開発者のサーバーに転送されることはありません。</p>
+          </div>
+          <div class="docs__faq-item">
+            <h3>Q. 機種変更したらデータは引き継げますか？</h3>
+            <p>端末標準のバックアップ・復元機能を利用してください。アプリ内のエクスポート機能で写真をカメラロールに保存しておくことも推奨します。</p>
+          </div>
+          <div class="docs__faq-item">
+            <h3>Q. タグの数に上限はありますか？</h3>
+            <p>上限はありません。ただし、管理のしやすさを考えると、5〜10個程度がおすすめです。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="docs__section docs__section--cta" id="contact">
+        <div class="docs__cta-card">
+          <h2>ご質問・ご要望はありますか？</h2>
+          <p>不具合の報告、機能のリクエスト、その他なんでもお気軽にどうぞ。</p>
+          <a href="https://docs.google.com/forms/d/1r9H_pHdiUU-PbCxZfiSpkvULrBJrYl3A0hePWXGGtmM/viewform"
+            class="docs__cta-btn" target="_blank" rel="noopener noreferrer" id="docs-contact-btn">
+            お問い合わせフォーム
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <nav class="footer__links" aria-label="法的情報">
+        <a href="../legal/terms.html" class="footer__link">利用規約</a>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <a href="../legal/privacy-policy.html" class="footer__link">プライバシーポリシー</a>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <a href="https://docs.google.com/forms/d/1r9H_pHdiUU-PbCxZfiSpkvULrBJrYl3A0hePWXGGtmM/viewform"
+          class="footer__link" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <a href="https://fryx404.github.io/" class="footer__link" target="_blank" rel="noopener noreferrer">作者</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 Takumi Furuya (fryx404)</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    /* Docs page — Section fade-in animations */
+    (function () {
+      'use strict';
+      var sections = document.querySelectorAll('.docs__section, .docs__toc');
+      sections.forEach(function (el) { el.classList.add('fade-in'); });
+
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+        sections.forEach(function (el, i) {
+          el.style.transitionDelay = (i * 0.06) + 's';
+          obs.observe(el);
+        });
+      } else {
+        sections.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+    })();
+  </script>
+</body>
+
+</html>

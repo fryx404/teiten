@@ -11,6 +11,10 @@
   <meta property="og:description" content="1日1枚、私だけの定点観測。写真でも、一言でも。あなたの変化を記録する定点観測アプリ Teiten。完全無料・登録不要・オフライン対応。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fryx404.github.io/teiten/">
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -25,23 +29,11 @@
   <header class="header" id="header">
     <div class="header__inner">
       <a href="./" class="header__logo" aria-label="Teiten ホーム">
-        <svg class="header__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32"
-          height="32" aria-hidden="true">
-          <rect width="32" height="32" rx="8" fill="url(#icon-grad)" />
-          <circle cx="16" cy="14" r="5" stroke="#fff" stroke-width="2" fill="none" />
-          <rect x="10" y="22" width="12" height="2" rx="1" fill="#fff" opacity="0.7" />
-          <defs>
-            <linearGradient id="icon-grad" x1="0" y1="0" x2="32" y2="32">
-              <stop stop-color="#00D1FF" />
-              <stop offset="1" stop-color="#0090CC" />
-            </linearGradient>
-          </defs>
-        </svg>
+        <img src="./assets/icon/icon-192x192.png" alt="Teiten" class="header__icon" width="32" height="32">
         <span class="header__title">Teiten</span>
       </a>
-      <nav class="header__nav" aria-label="フッターリンク">
-        <a href="./legal/privacy-policy.html" class="header__link">Privacy Policy</a>
-        <a href="./legal/terms.html" class="header__link">Terms</a>
+      <nav class="header__nav" aria-label="サイトナビゲーション">
+        <a href="./docs/" class="header__link">Docs</a>
       </nav>
     </div>
   </header>
@@ -69,7 +61,7 @@
       </div>
       <div class="hero__visual">
         <div class="hero__mockup-wrapper">
-          <img src="./assets/mockup.png" alt="Teiten アプリのカレンダービュー画面" class="hero__mockup" width="320" height="auto"
+          <img src="./assets/Screen.jpg" alt="Teiten アプリのカレンダービュー画面" class="hero__mockup" width="320" height="auto"
             loading="eager">
           <!-- 装飾ドット -->
           <div class="hero__dot hero__dot--1" aria-hidden="true"></div>
@@ -155,6 +147,10 @@
         <a href="./legal/terms.html" class="footer__link">利用規約</a>
         <span class="footer__sep" aria-hidden="true">·</span>
         <a href="./legal/privacy-policy.html" class="footer__link">プライバシーポリシー</a>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <a href="https://docs.google.com/forms/d/1r9H_pHdiUU-PbCxZfiSpkvULrBJrYl3A0hePWXGGtmM/viewform" class="footer__link" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <a href="https://fryx404.github.io/" class="footer__link" target="_blank" rel="noopener noreferrer">作者</a>
       </nav>
       <p class="footer__copy">&copy; 2026 Takumi Furuya (fryx404)</p>
       <p class="footer__disclaimer">Google Play および Google Play ロゴは、Google LLC の商標です。</p>
