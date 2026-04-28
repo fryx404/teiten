@@ -1,0 +1,16 @@
+{
+  "name": "teiten-lp",
+  "version": "1.0.0",
+  "description": "1日1枚の写真を記録する、ミニマルな定点観測アプリ。",
+  "main": "script.js",
+  "scripts": {
+    "test": "node script.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fryx404/teiten.git"
+  },
+  "author": "Takumi Furuya (fryx404)",
+  "license": "ISC",
+  "type": "module"
+}
