@@ -74,7 +74,9 @@
       document.documentElement.setAttribute('data-theme', newTheme);
       try {
         localStorage.setItem('teiten-theme', newTheme);
-      } catch (e) {}
+      } catch (e) {
+        console.warn(e);
+      }
     });
   }
 
@@ -87,7 +89,9 @@
           if (!localStorage.getItem('teiten-theme')) {
             document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
           }
-        } catch (err) {}
+        } catch (err) {
+          console.warn(err);
+        }
       });
     }
   }
