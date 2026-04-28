@@ -51,7 +51,6 @@
   // ---- Header background on scroll ----
   var header = document.getElementById('header');
   if (header) {
-    var lastScroll = 0;
     window.addEventListener(
       'scroll',
       function () {
@@ -61,7 +60,6 @@
         } else {
           header.style.boxShadow = 'none';
         }
-        lastScroll = y;
       },
       { passive: true }
     );
