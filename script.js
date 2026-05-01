@@ -51,7 +51,6 @@
   // ---- Header background on scroll ----
   var header = document.getElementById('header');
   if (header) {
-    var lastScroll = 0;
     window.addEventListener(
       'scroll',
       function () {
@@ -61,7 +60,6 @@
         } else {
           header.style.boxShadow = 'none';
         }
-        lastScroll = y;
       },
       { passive: true }
     );
@@ -76,7 +74,9 @@
       document.documentElement.setAttribute('data-theme', newTheme);
       try {
         localStorage.setItem('teiten-theme', newTheme);
-      } catch (e) {}
+      } catch (e) {
+        console.warn(e);
+      }
     });
   }
 
@@ -89,7 +89,9 @@
           if (!localStorage.getItem('teiten-theme')) {
             document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
           }
-        } catch (err) {}
+        } catch (err) {
+          console.warn(err);
+        }
       });
     }
   }
