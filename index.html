@@ -28,7 +28,7 @@
         var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         var theme = stored ? stored : (prefersDark ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', theme);
-      } catch (e) {}
+      } catch (e) { }
     })();
   </script>
 </head>
@@ -46,7 +46,8 @@
         <a href="./docs/" class="header__link">Docs</a>
         <button class="theme-toggle" id="theme-toggle" aria-label="テーマを切り替える">
           <!-- Sun Icon -->
-          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -58,7 +59,8 @@
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
           <!-- Moon Icon -->
-          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
@@ -76,7 +78,6 @@
         <p class="hero__sub">
           写真でも、一言でも。<br>
           あなたの変化を記録する定点観測アプリ。<br>
-          完全無料・登録不要。あなただけのオフライン写真日記。
         </p>
         <div class="hero__cta">
           <!-- TODO: アプリ公開後に実際のGoogle Play URLに差し替え -->
@@ -176,7 +177,8 @@
         <span class="footer__sep" aria-hidden="true">·</span>
         <a href="./legal/privacy-policy.html" class="footer__link">プライバシーポリシー</a>
         <span class="footer__sep" aria-hidden="true">·</span>
-        <a href="https://docs.google.com/forms/d/1r9H_pHdiUU-PbCxZfiSpkvULrBJrYl3A0hePWXGGtmM/viewform" class="footer__link" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        <a href="https://docs.google.com/forms/d/1r9H_pHdiUU-PbCxZfiSpkvULrBJrYl3A0hePWXGGtmM/viewform"
+          class="footer__link" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
         <span class="footer__sep" aria-hidden="true">·</span>
         <a href="https://fryx404.github.io/" class="footer__link" target="_blank" rel="noopener noreferrer">作者</a>
       </nav>
