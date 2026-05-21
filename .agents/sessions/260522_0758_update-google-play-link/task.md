@@ -1,0 +1,3 @@
+- [x] index.html内のGoogle Playリンクを製品版URLに更新する
+- [x] npm testによる動作検証
+- [x] walkthrough.mdの作成とセッション保存
