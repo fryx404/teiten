@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>使い方ガイド - Teiten（定点）</title>
-  <meta name="description" content="定点観測アプリ Teiten の使い方ガイド。写真の記録、タグ管理、スライドショー、アナリティクスまで、すべての機能をわかりやすく解説します。">
+  <meta name="description" content="定点観測アプリ Teiten の使い方ガイド。写真の記録、タグ管理、スライドショー、アナリティクス、エクスポートまで、すべての機能をわかりやすく解説します。">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon/favicon-16x16.png">
@@ -69,7 +69,7 @@
     <div class="docs__inner">
 
       <h1 class="docs__title">使い方ガイド</h1>
-      <p class="docs__lead">Teiten のすべての機能を紹介します。</p>
+      <p class="docs__lead">Teiten のすべての機能を紹介します。（アプリ v1.1.0 時点）</p>
 
       <!-- ===== Table of Contents ===== -->
       <nav class="docs__toc" aria-label="目次">
@@ -103,9 +103,16 @@
             <li>データはすべてあなたの端末内に保存（ローカルファースト）</li>
             <li>オフラインで動作</li>
           </ul>
+
+          <h3>画面の見かた</h3>
+          <ul class="docs__list">
+            <li><strong>左上のボタン</strong>: アナリティクス・スライドショー・バーチカルビュー・カレンダー</li>
+            <li><strong>右上のボタン</strong>: 使い方ガイド（？アイコン）・設定（歯車アイコン）</li>
+            <li><strong>右下の「＋」ボタン</strong>: 写真や一言の追加、タグの作成</li>
+          </ul>
           <div class="docs__tip">
             <span class="docs__tip-icon" aria-hidden="true">💡</span>
-            <p>Google Play からインストールしたら、すぐに使い始められます。メールアドレスやパスワードの入力は不要です。</p>
+            <p>Google Play からインストールしたら、すぐに使い始められます。メールアドレスやパスワードの入力は不要です。操作に迷ったら、右上の<strong>？アイコン</strong>からいつでも使い方ガイドを見返せます。</p>
           </div>
         </div>
       </section>
@@ -117,25 +124,41 @@
           <h2>写真を記録する</h2>
         </div>
         <div class="docs__content">
+          <p>写真は、ホーム画面のカレンダーで<strong>選択中の日付</strong>に記録されます（最初は今日が選択されています）。</p>
+
           <h3>カメラで撮影する</h3>
           <ol class="docs__list docs__list--ordered">
-            <li>画面右下の<strong>カメラボタン（青い丸ボタン）</strong>をタップ</li>
+            <li>画面右下の<strong>「＋」ボタン</strong>をタップし、メニューから<strong>「カメラ」</strong>を選択</li>
             <li>カメラが起動するので撮影</li>
             <li>タグを選択して保存</li>
           </ol>
+          <div class="docs__tip">
+            <span class="docs__tip-icon" aria-hidden="true">⚡</span>
+            <p>「＋」ボタンを<strong>長押し</strong>すると、メニューを開かずにすぐカメラが起動します。</p>
+          </div>
 
-          <h3>ギャラリーから選ぶ</h3>
+          <h3>ライブラリから選ぶ</h3>
           <ol class="docs__list docs__list--ordered">
-            <li>カメラボタンの隣にある<strong>画像追加ボタン</strong>をタップ</li>
-            <li>端末のギャラリーから写真を選択</li>
-            <li>タグを選択して保存</li>
+            <li>「＋」ボタン →<strong>「ライブラリ」</strong>をタップ</li>
+            <li><strong>選択中の日付に撮影された写真だけ</strong>が、撮影時刻順に一覧表示されます</li>
+            <li>写真を選び、タグを選択して保存</li>
           </ol>
+          <ul class="docs__list">
+            <li>「前日」「翌日」で一覧の日付を切り替えられます（保存先は選択中の日付のままです）</li>
+            <li>日付に関係なく選びたいときは<strong>「すべての写真から選ぶ」</strong>で端末標準の写真ピッカーに切り替え</li>
+            <li>初回は写真へのアクセス許可が必要です。許可しなかった場合は「設定を開く」、一部の写真だけ許可している場合は「許可する写真を変更」から変更できます</li>
+          </ul>
 
           <h3>過去の日付に記録する</h3>
           <ol class="docs__list docs__list--ordered">
             <li>カレンダーで記録したい日付をタップして選択</li>
-            <li>カメラまたはギャラリーから追加</li>
+            <li>「＋」ボタンからカメラまたはライブラリで追加</li>
           </ol>
+          <ul class="docs__list">
+            <li>記録のない日は、カレンダー上部の大きな枠をタップしても追加メニューが開きます</li>
+            <li>未来の日付には記録できません</li>
+            <li>同じ日・同じタグにすでに写真がある場合は、差し替えるかどうかを確認します</li>
+          </ul>
 
           <div class="docs__tip">
             <span class="docs__tip-icon" aria-hidden="true">📷</span>
@@ -151,17 +174,28 @@
           <h2>カレンダーで見る</h2>
         </div>
         <div class="docs__content">
-          <p>ホーム画面のカレンダーには、記録した日にサムネイルが表示されます。</p>
+          <p>ホーム画面の上部には選択中の日付の写真が大きく表示され、その下のカレンダーには記録した日にサムネイルが表示されます。</p>
           <ul class="docs__list">
-            <li>左右スワイプで <strong>月を切り替え</strong></li>
-            <li>月表示をタップすると<strong>月選択ピッカー</strong>が開き、素早くジャンプ</li>
-            <li>サムネイルをタップで <strong>詳細表示（フォトプレビュー）</strong></li>
-            <li>詳細表示では写真の削除やタグの変更が可能</li>
+            <li>日付をタップすると<strong>その日を選択</strong>し、上部にその日の写真が表示されます</li>
+            <li>上部の写真をタップすると<strong>詳細表示（フォトプレビュー）</strong>が開きます</li>
+            <li>左右スワイプ、または矢印ボタンで<strong>月を切り替え</strong></li>
+            <li>年月の表示をタップすると<strong>月選択ピッカー</strong>が開き、素早くジャンプ</li>
+            <li>「今日」ボタンで今日の日付に戻る</li>
+            <li>タグで絞り込んでいないときは、日付の下のドットでその日に記録したタグがわかります</li>
           </ul>
-          <div class="docs__tip">
-            <span class="docs__tip-icon" aria-hidden="true">📅</span>
-            <p>カレンダー上部にはヒーローセクションがあり、選択した日付の写真が大きく表示されます。一目で記録の継続状況を確認できます。</p>
-          </div>
+
+          <h3>カレンダービュー</h3>
+          <ul class="docs__list">
+            <li>ホーム画面左上の<strong>カレンダーアイコン</strong>をタップすると、サムネイルを大きく表示したカレンダーが開きます</li>
+            <li>写真のある日付をタップすると、すぐに詳細表示が開きます</li>
+          </ul>
+
+          <h3>詳細表示（フォトプレビュー）</h3>
+          <ul class="docs__list">
+            <li>左右スワイプで前後の写真に移動</li>
+            <li>画面をタップすると操作ボタンの表示/非表示を切り替え</li>
+            <li>下部のボタンから<strong>タグの変更</strong>・<strong>日付の変更</strong>・<strong>写真の選び直し</strong>・<strong>削除</strong>ができます</li>
+          </ul>
         </div>
       </section>
 
@@ -176,28 +210,35 @@
 
           <h3>タグを作成する</h3>
           <ol class="docs__list docs__list--ordered">
-            <li>画面右下の<strong>タグアイコンボタン</strong>をタップ</li>
-            <li>タグ名と絵文字、カラーを設定</li>
-            <li>「保存」で完了</li>
+            <li>画面右下の「＋」ボタン →<strong>「タグ追加」</strong>をタップ</li>
+            <li>タグ名・アイコン（絵文字）・テーマカラーを設定</li>
+            <li>「作成する」で完了</li>
           </ol>
 
           <h3>タグで絞り込む</h3>
           <ul class="docs__list">
-            <li>カレンダー上部のタグチップをタップして絞り込み</li>
-            <li>複数タグの同時選択も可能（比較モード）</li>
-            <li>「すべて」を選択すると全写真を表示</li>
+            <li>カレンダー上部のタグチップをタップすると、そのタグの写真だけを表示</li>
+            <li>もう一度タップするか「すべて」を選ぶと、全写真の表示に戻ります</li>
+            <li>タグが2つ以上あるときは、チップ列の右端の<strong>比較モード</strong>ボタンをオンにすると複数のタグを同時に選択できます</li>
           </ul>
 
           <h3>タグを編集する</h3>
           <ul class="docs__list">
             <li>タグチップを<strong>長押し</strong>すると編集画面へ移動</li>
-            <li>名前・絵文字・カラーの変更、タグの削除が可能</li>
-            <li>設定 → タグ設定から一覧管理も可能</li>
+            <li>名前・アイコン・カラーの変更</li>
+            <li>そのタグの写真を<strong>別のタグへ一括移動</strong></li>
+            <li>タグの削除（写真は削除されず、タグなしの状態で残ります）</li>
+          </ul>
+
+          <h3>タグのない写真を整理する</h3>
+          <ul class="docs__list">
+            <li>タグのない写真があると、ホーム画面に「未整理の写真が ○ 枚あります」と表示されます</li>
+            <li>タップすると一覧から写真を選んで、まとめてタグを付けられます</li>
           </ul>
 
           <div class="docs__tip">
             <span class="docs__tip-icon" aria-hidden="true">🏷️</span>
-            <p>例えば「🌱 植物」「📸 自撮り」「💻 デスク」「🍱 お弁当」など、定点観測したいテーマごとにタグを作ると便利です。</p>
+            <p>例えば「🌱 植物」「📸 自撮り」「💻 デスク」「🍱 お弁当」など、定点観測したいテーマごとにタグを作ると便利です。タグの並び順や表示/非表示は、設定 → タグ設定で変更できます。</p>
           </div>
         </div>
       </section>
@@ -218,10 +259,11 @@
           </ul>
 
           <h3>スライドショーの設定</h3>
+          <p>設定 → スライドショー設定から変更できます。</p>
           <ul class="docs__list">
-            <li><strong>再生順序</strong>: 古い順・新しい順・ランダムから選択</li>
-            <li><strong>表示間隔</strong>: スライド切り替えの秒数を調整</li>
-            <li>設定 → スライドショー設定から変更可能</li>
+            <li><strong>表示順序</strong>: 古い順・新しい順・ランダムから選択</li>
+            <li><strong>再生範囲</strong>: 今月のみ・今年のみ・全期間から選択</li>
+            <li><strong>切り替え間隔</strong>: 3〜10秒から選択</li>
           </ul>
 
           <div class="docs__tip">
@@ -238,11 +280,12 @@
           <h2>バーチカルビュー</h2>
         </div>
         <div class="docs__content">
-          <p>写真を縦に一覧表示して、スクロールで連続的に振り返れるビューです。</p>
+          <p>カレンダーを週ごとに縦に並べて、スクロールで長期間の記録を連続的に振り返れるビューです。</p>
           <ul class="docs__list">
-            <li>ホーム画面左上の<strong>リストアイコン</strong>をタップして開く</li>
-            <li>日付ごとに写真が縦に並び、一覧性が高い</li>
-            <li>素早くスクロールして全体の記録を把握</li>
+            <li>ホーム画面左上の<strong>横線3本のアイコン</strong>をタップして開く</li>
+            <li>最新の週から表示され、上にスクロールすると過去にさかのぼれます</li>
+            <li>写真のある日をタップすると詳細表示、記録のない日をタップすると追加メニューが開きます</li>
+            <li>タグチップで絞り込み表示も可能</li>
           </ul>
         </div>
       </section>
@@ -257,8 +300,9 @@
           <p>記録の継続状況を数字とビジュアルで確認できます。</p>
           <ul class="docs__list">
             <li>ホーム画面左上の<strong>グラフアイコン</strong>をタップして開く</li>
+            <li><strong>サマリー</strong>: 記録開始から何日目か、現在の連続日数</li>
             <li><strong>ヒートマップ</strong>: GitHub風の記録グラフで年間の活動を可視化</li>
-            <li><strong>連続日数</strong>: 現在の連続記録日数と最高記録</li>
+            <li><strong>年別の統計</strong>: 記録日数・最高連続日数・総枚数・記録率・月平均</li>
             <li><strong>月別チャート</strong>: 月ごとの記録数をバーチャートで表示</li>
             <li><strong>タグ別分析</strong>: タグで絞り込んだ統計も確認可能</li>
           </ul>
@@ -278,13 +322,14 @@
         <div class="docs__content">
           <p>写真の代わりに、テキストカードとしてその日の一言を記録できます。</p>
           <ol class="docs__list docs__list--ordered">
-            <li>画面右下の<strong>ペンアイコン</strong>をタップ</li>
-            <li>テキストを入力</li>
-            <li>カラフルなテキストカードとして写真と一緒にカレンダーに保存</li>
+            <li>画面右下の「＋」ボタン →<strong>「一言」</strong>をタップ</li>
+            <li>テキストを入力し、カードの色（ライト/ダーク）を選択</li>
+            <li>「保存」でテキストカードとしてカレンダーに記録</li>
           </ol>
           <ul class="docs__list">
-            <li>一言は1日1件まで記録可能</li>
-            <li>設定画面から機能のON/OFFを切り替え可能</li>
+            <li>一言は1日1件まで。すでに記録がある日は差し替えるかどうかを確認します</li>
+            <li>一言は専用の「一言」タグで管理され、写真とは別に記録されます（「一言」タグに写真は追加できません）</li>
+            <li>設定画面から機能のON/OFFを切り替え可能。OFFにすると追加メニューに表示されなくなります</li>
           </ul>
           <div class="docs__tip">
             <span class="docs__tip-icon" aria-hidden="true">✍️</span>
@@ -304,7 +349,7 @@
 
           <h3>外観（テーマ）</h3>
           <ul class="docs__list">
-            <li><strong>ライト</strong> / <strong>ダーク</strong> / <strong>システム連動</strong> の3モードから選択</li>
+            <li><strong>ライト</strong> / <strong>ダーク</strong> / <strong>システム</strong>（端末の設定に連動）の3モードから選択</li>
           </ul>
 
           <h3>一言機能</h3>
@@ -314,31 +359,33 @@
 
           <h3>タグ設定</h3>
           <ul class="docs__list">
-            <li>タグの一覧管理・並び替え・非表示設定</li>
+            <li>表示スタイル（アイコン＋タグ名 / アイコンのみ）の切り替え</li>
+            <li>タグの並べ替え、フィルターへの表示/非表示</li>
           </ul>
 
           <h3>リマインダー設定</h3>
           <ul class="docs__list">
-            <li>通知で記録を忘れないようにリマインド</li>
-            <li>複数の通知時刻を設定可能</li>
+            <li>毎日決まった時刻に通知して、撮り忘れを防止</li>
+            <li>通知時刻は最大5件まで登録可能</li>
           </ul>
 
           <h3>スライドショー設定</h3>
           <ul class="docs__list">
-            <li>再生順序（古い順・新しい順・ランダム）と表示間隔を調整</li>
+            <li>表示順序・再生範囲・切り替え間隔を調整</li>
           </ul>
 
           <h3>データとストレージ</h3>
           <ul class="docs__list">
-            <li>使用ストレージの確認</li>
-            <li>写真のエクスポート（カメラロールへ保存）</li>
-            <li>写真の一括管理</li>
+            <li>使用ストレージと写真の枚数の確認</li>
+            <li><strong>写真の管理</strong>: すべての写真を一覧表示し、選択した写真の一括タグ付け・削除・カメラロールへの保存</li>
+            <li><strong>写真をエクスポート</strong>: すべての写真をカメラロールに保存</li>
           </ul>
 
           <h3>このアプリについて</h3>
           <ul class="docs__list">
             <li>利用規約・プライバシーポリシーの確認</li>
             <li>オープンソースライセンスの表示</li>
+            <li>公式サイト・お問い合わせへのリンク</li>
           </ul>
         </div>
       </section>
@@ -352,7 +399,9 @@
         <div class="docs__content">
           <p>データはすべて端末内に保存されるため、<strong>バックアップはユーザーの責任</strong>です。</p>
           <ul class="docs__list">
-            <li>設定 → データとストレージ → 「データエクスポート」から写真をカメラロールに保存</li>
+            <li>設定 → データとストレージ →<strong>「写真をエクスポート」</strong>で、すべての写真をカメラロールの「Teiten」アルバムにコピー</li>
+            <li>一部の写真だけ保存したいときは、設定 → データとストレージ →「写真の管理」で選択して保存</li>
+            <li>エクスポートされるのは画像のみです（タグなどの情報は含まれません）</li>
             <li>端末のバックアップ機能と併用することを推奨</li>
           </ul>
           <div class="docs__caution">
@@ -374,6 +423,10 @@
             <p>タグ1つにつき1日1枚の記録です。複数のタグを作成すれば、1日に複数枚の写真を記録できます。例えば「植物」タグで1枚、「自撮り」タグで1枚という使い方が可能です。</p>
           </div>
           <div class="docs__faq-item">
+            <h3>Q. ライブラリから追加するとき、撮ったはずの写真が表示されません。</h3>
+            <p>一覧には、選択中の日付に撮影された写真だけが表示されます。スクリーンショットや受信した画像など、撮影日の情報がない写真は表示されないことがあります。その場合は「すべての写真から選ぶ」から選択してください。また、写真へのアクセスを一部だけ許可している場合は、許可した写真のみが表示されます。</p>
+          </div>
+          <div class="docs__faq-item">
             <h3>Q. iPhoneでも使えますか？</h3>
             <p>現在は Android のみ対応しています。iOS版の予定は未定です。</p>
           </div>
@@ -383,7 +436,7 @@
           </div>
           <div class="docs__faq-item">
             <h3>Q. 機種変更したらデータは引き継げますか？</h3>
-            <p>端末標準のバックアップ・復元機能を利用してください。アプリ内のエクスポート機能で写真をカメラロールに保存しておくことも推奨します。</p>
+            <p>端末標準のバックアップ・復元機能を利用してください。アプリ内のエクスポート機能で写真をカメラロールに保存しておくことも推奨します（エクスポートにはタグなどの情報は含まれません）。</p>
           </div>
           <div class="docs__faq-item">
             <h3>Q. タグの数に上限はありますか？</h3>
@@ -421,8 +474,6 @@
         <span class="footer__sep" aria-hidden="true">·</span>
         <a href="https://docs.google.com/forms/d/1r9H_pHdiUU-PbCxZfiSpkvULrBJrYl3A0hePWXGGtmM/viewform"
           class="footer__link" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
-        <span class="footer__sep" aria-hidden="true">·</span>
-        <a href="https://fryx404.github.io/" class="footer__link" target="_blank" rel="noopener noreferrer">作者</a>
       </nav>
       <p class="footer__copy">&copy; 2026 Takumi Furuya (fryx404)</p>
     </div>
